@@ -30,6 +30,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Refresh projects snapshot
+        run: node tools/fetch-projects.js || echo "使用已提交的仓库快照"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5

@@ -55,6 +55,7 @@ menu:
     archives: /archives || uc-archive
     categories: /categories || uc-category
     tags: /tags || uc-tag
+  projects: /projects || uc-bookmark
   about: /about || uc-about
 
 # Navigation Bar Configuration
